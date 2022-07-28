@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ButtonComponent } from './button/button.component';
+import { AlertComponent } from './alert/alert.component';
+import { PopoverComponent } from './popover/popover.component';
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [ButtonComponent],
+  declarations: [AlertComponent, PopoverComponent],
 })
 export class DesignSystemModule {}
