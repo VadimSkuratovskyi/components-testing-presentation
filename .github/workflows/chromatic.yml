@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Install dependencies
-        run: npm
+        run: npm i
         # 👇 Checks if the branch is not main and runs Chromatic
         
       - name: Publish to Chromatic
