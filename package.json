@@ -9,7 +9,7 @@
     "build": "nx build",
     "test": "nx test",
     "build-storybook": "npx nx run design-system:build-storybook",
-    "chromatic": "npx chromatic --project-token=5acd09869dd0"
+    "chromatic": "npx chromatic"
   },
   "private": true,
   "dependencies": {
