@@ -1,5 +1,6 @@
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
 import { AlertComponent } from './alert.component';
+import { userEvent, within } from '@storybook/testing-library';
 
 export default {
   title: 'Components/Alert',
@@ -19,3 +20,9 @@ const Template: Story<AlertComponent> = (args: AlertComponent) => ({
 export const Alert = Template.bind({});
 Alert.args = {
 }
+
+Alert.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  const button = canvas.getAllByRole('button');
+  await userEvent.click(button[1]);
+};

@@ -15,7 +15,6 @@ describe('design-system', () => {
   });
   
   it('should show error aler', () => {
-    cy.get('.btn-danger').click()
     cy.get('.alert-danger').should('be.visible');
   });
 
