@@ -6,7 +6,7 @@ describe('design-system', () => {
 
   it('should show aler', () => {
     cy.get('.btn-primary').click()
-    cy.get('.alert-success').should('be.not.visible');
+    cy.get('.alert-success').should('be.visible');
   });
 
   it('should show success aler', () => {
