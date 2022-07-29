@@ -12,6 +12,11 @@
       "configurations": {
         "ci": {
           "devServerTarget": "design-system:storybook:ci"
+        },
+        "localhost": {
+          "devServerTarget": "design-system:storybook",
+          "watch": true,
+          "exit": false
         }
       }
     },
