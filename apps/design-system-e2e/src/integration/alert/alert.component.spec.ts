@@ -4,18 +4,17 @@ describe('design-system', () => {
     cy.get('presentation-alert').should('exist');
   });
 
-  it('should show aler', () => {
+  it('should show alert', () => {
     cy.get('.btn-primary').click()
     cy.get('.alert-success').should('be.visible');
   });
 
-  it('should show success aler', () => {
+  it('should show success alert', () => {
     cy.get('.btn-primary').click()
     cy.get('.alert-success').should('be.visible');
   });
   
-  it('should show error aler', () => {
+  it('should show error alert', () => {
     cy.get('.alert-danger').should('be.visible');
   });
-
 });

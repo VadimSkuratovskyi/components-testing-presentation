@@ -1,6 +1,7 @@
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
 import { PopoverComponent } from './popover.component';
 import { userEvent, within } from '@storybook/testing-library';
+import { expect } from '@storybook/jest';
 
 export default {
   title: 'Components/Popover',
@@ -25,4 +26,5 @@ Popover.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement);
   const button = canvas.getByRole('button');
   await userEvent.click(button);
+  await expect(document.querySelector('.alert-danger')).toBeInTheDocument();
 };
