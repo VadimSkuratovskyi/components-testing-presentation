@@ -26,5 +26,5 @@ Popover.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement);
   const button = canvas.getByRole('button');
   await userEvent.click(button);
-  await expect(document.querySelector('.alert-danger')).toBeInTheDocument();
+  await expect(document.querySelector('.popover')).toBeInTheDocument();
 };
